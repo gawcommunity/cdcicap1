@@ -5,10 +5,5 @@ phases:
     runtime-versions:
       java: corretto11
     commands:
-      - /root/.pyenv/versions/3.8.10/bin/python3.8 -m pip install --upgrade pip
-      - pip3 uninstall botocore --yes
-      - pip3 uninstall boto3 --yes
-      - pip3 install botocore
-      - pip3 install boto3
-      - pip3 install awscli --upgrade --user
+      - echo ""
       - aws s3 cp index.html s3://gawcicdcap1.gurusaws.com/index.html
